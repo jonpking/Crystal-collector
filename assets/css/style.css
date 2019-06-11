@@ -1,0 +1,25 @@
+
+body{
+    background-image: "images/background crystal pattern.jpg";
+    text-align: center;
+    margin: 0 20%;
+    font-family: fantasy;
+}
+
+h1{
+    font-size: 90px;
+    background-color: cyan;
+    border: 1px solid black;
+}
+
+h2{
+    font-size: 30px;
+    background-color: olive;
+    border: 1px solid black;
+}
+
+#instructions{
+    font-size: 20px;
+    background-color: steelblue;
+    border: 1px solid black;
+}
