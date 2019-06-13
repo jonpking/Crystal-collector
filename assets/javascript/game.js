@@ -46,9 +46,9 @@ function displayLosses(){
 function addCrystalValue(event){
     console.log(event);
     playerScore = playerScore + crystalValues[event.target.id];
-    displayPlayerScore();
     gameWin();
     gameLose();
+    displayPlayerScore();
 };
 
 // checks if the players total score is equal to the "goal score",
