@@ -1,6 +1,8 @@
 
 let goalScore = 0;
 let playerScore = 0;
+let wins = 0;
+let losses = 0;
 // creates object with random values for each crystal between 1 and 12
 let crystalValues = {
     blueCrystal: Math.floor(Math.random() * 12) + 1,
