@@ -47,21 +47,33 @@ function addCrystalValue(event){
     console.log(event);
     playerScore = playerScore + crystalValues[event.target.id];
     displayPlayerScore();
+    gameWin();
+    gameLose();
 };
 
 // checks if the players total score is equal to the "goal score",
 // if so increases win count, if "goal score" is exceeded increase lose count
 function gameWin(){
-    
+    if (playerScore === goalScore){
+        wins++;
+        displayWins();
+        resetGame();
+    };
 };
 
 function gameLose(){
-    
+    if (playerScore > goalScore){
+        losses++
+        displayLosses();
+        resetGame();
+    };
 };
 
 // restart game when player wins or looses and resets crystal values and "goal score" value
 function resetGame(){
-    
+    playerScore = 0;
+    setGoalScore();
+    displayGoalScore();
 };
 
 
