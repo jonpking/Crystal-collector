@@ -32,6 +32,16 @@ function displayPlayerScore(){
     $("#playerScore").text(playerScore);
 };
 
+// display wins
+function displayWins(){
+    $("#wins").text(wins);
+}
+
+// display losses
+function displayLosses(){
+    $("#losses").text(losses);
+}
+
 // add value of the crystal that was clicked to the players total score
 function addCrystalValue(event){
     console.log(event);
@@ -58,3 +68,5 @@ function resetGame(){
 setGoalScore();
 displayGoalScore();
 displayPlayerScore();
+displayWins();
+displayLosses();
